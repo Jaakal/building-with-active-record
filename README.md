@@ -152,7 +152,7 @@ $ Post.first.user
 
 <a href="https://github.com/Jaakal" target="_blank">
     
-  ![Screenshot Image](app/assets/images/profilePicture.png) 
+  ![Screenshot Image](app/assets/images/profile.png) 
 
 </a>
 
@@ -172,7 +172,7 @@ Feel free to check the [issues page](https://github.com/Jaakal/building-with-act
 Give a ⭐️ if you like this project!
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/https://github.com/Jaakal/building-with-active-record.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Jaakal/building-with-active-record.svg?style=flat-square
 [contributors-url]: https://github.com/Jaakal/building-with-active-record/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Jaakal/building-with-active-record.svg?style=flat-square
 [forks-url]: https://github.com/Jaakal/building-with-active-record/network/members
