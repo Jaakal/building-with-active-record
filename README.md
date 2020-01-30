@@ -12,24 +12,24 @@
  <h2 align="center"> Rails Application implementing Active Record Associations </h2>
 
   <p align="center">
-    Ruby and rails project that implements a basic association between models using Active Record
+    Ruby on Rails project that implements a basic association between models using Active Record
     <br />
     <a href="https://github.com/Jaakal/building-with-active-record"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Jaakal/building-with-active-record">View Demo</a>
+    <a href="https://github.com/Jaakal/building-with-active-record">View demo</a>
     ·
-    <a href="https://github.com/Jaakal/building-with-active-record/issues">Report Bug</a>
+    <a href="https://github.com/Jaakal/building-with-active-record/issues">Report bug</a>
     ·
-    <a href="https://github.com/Jaakal/building-with-active-record/issues">Request Feature</a>
+    <a href="https://github.com/Jaakal/building-with-active-record/issues">Request feature</a>
   </p>
 
 </p>
 
 ## Table of Contents
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Required Installations](#Required-Installations)
+* [About the project](#about-the-project)
+  * [Built with](#built-with)
+* [Required installations](#Required-Installations)
   * [Prerequisites](#Prerequisites)
   * [Installing](#Installing)
   * [Instructions](#Instructions)
@@ -41,26 +41,26 @@
 
 ### Built With
 The project was developed using the following technologies:
-- [RUBY](https://www.ruby-lang.org/es/)
-- [RUBY AND RAILS](https://rubyonrails.org/)
+- [Ruby](https://www.ruby-lang.org/es/)
+- [Ruby on Rails](https://rubyonrails.org/)
 
 ## Required Installations
 
 ### Prerequisites
 
-This project runs on [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and [Rails](http://installrails.com/)
+This project runs on [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Ruby on Rails](http://installrails.com/)
  
 * Ruby
-* Rails
+* Ruby on Rails
 
-After installation, run `ruby -v` to make sure Ruby installed correctly. Example
+After installation, run `ruby -v` to make sure Ruby installed correctly. Example:
 ```
 $ ruby -v
 ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-linux]
 ```
 
-Also make sure that Rails is installed, but running `rails -v`. 
-Example
+Also make sure that Rails is installed running `rails -v`. 
+Example:
 ```
 $ rails -v
 Rails 6.0.2.1
@@ -74,13 +74,13 @@ Rails 6.0.2.1
 
 <p>Follow these steps:</p>
 
-Clone the Repository
+Clone the repository
 
 ```Shell
 user@pc:~$ git clone https://github.com/Jaakal/building-with-active-record
 ```
 
-Click on the console and to go to the folder that was created
+On the console go to the folder that was created
 
 ```Shell
 user@pc:~$ cd building-with-active-record
@@ -90,13 +90,13 @@ user@pc:~$ cd building-with-active-record
 $ bundle install --without production
 ```
 
-Next, migrate the database:
+Next migrate the database:
 
 ```
 $ rails db:migrate
 ```
 
-Run this command if you encountered a problem runing rails db:migrate
+Run this command if you encountered a problem running rails db:migrate
 
 ```
 $ bundle exec rails db:migrate
@@ -109,7 +109,7 @@ Finally you can test the associations through the rails console:
 $ rails console
 ```
 
-Code Example
+Code snippet
 
 ```
 $ user = User.create(name: "Joe", username: "Joe12")
@@ -127,7 +127,11 @@ $ Post.first.user
 
 ## Contact
 
-👤 **Yair Fernando Facio**
+<p align="center">
+
+  Project Link: [https://github.com/YairFernando67/sample_app](https://github.com/YairFernando67/sample_app)
+
+</p>
 
 <a href="https://yairfernando67.github.io/Portfolio/" target="_blank">
     
@@ -135,26 +139,23 @@ $ Post.first.user
 
 </a>
 
+👤 **Yair Fernando Facio**
+
 - Github: [@YairFernando67](https://github.com/YairFernando67)
 - Twitter: [@YairFernando18](https://twitter.com/YairFernando18)
 - Linkedin: [softwaredeveloperyairfacio](https://www.linkedin.com/in/softwaredeveloperyairfacio/)
 - Email: [yair.facio11@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=yair.facio11@gmail.com)
 - Portfolio: [softwaredeveloper](https://yairfernando67.github.io/Portfolio/)
 
-<p align="center">
 
-  Project Link: [https://github.com/YairFernando67/sample_app](https://github.com/YairFernando67/sample_app)
-
-</p>
-
-
-👤 **Jaak Kivinukk**
 
 <a href="https://github.com/Jaakal" target="_blank">
     
   ![Screenshot Image](app/assets/images/profile.png) 
 
 </a>
+
+👤 **Jaak Kivinukk**
 
 - Github: [@Jaakal](https://github.com/Jaakal)
 - Twitter: [@JKivinukk](https://twitter.com/JKivinukk)
