@@ -1,87 +1,190 @@
-# Project Title
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield2]][linkedin-url2]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Hireable][hireable]][hireable-url]
 
-One Paragraph of project description goes here
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+ <h2 align="center"> Rails Application implementing Active Record Associations </h2>
 
-## Getting Started
+  <p align="center">
+    Ruby and rails project that implements a basic association between models using Active Record
+    <br />
+    <a href="https://github.com/Jaakal/building-with-active-record"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Jaakal/building-with-active-record">View Demo</a>
+    ·
+    <a href="https://github.com/Jaakal/building-with-active-record/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Jaakal/building-with-active-record/issues">Request Feature</a>
+  </p>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+</p>
+
+## Table of Contents
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Required Installations](#Required-Installations)
+  * [Prerequisites](#Prerequisites)
+  * [Installing](#Installing)
+  * [Instructions](#Instructions)
+* [Contact](#contact)
+* [Contributing](#Contributing)
+* [Show your support](#Show-your-support)
+
+## About The Project
+
+### Built With
+The project was developed using the following technologies:
+- [RUBY](https://www.ruby-lang.org/es/)
+- [RUBY AND RAILS](https://rubyonrails.org/)
+
+## Required Installations
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project runs on [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and [Rails](http://installrails.com/)
+ 
+* Ruby
+* Rails
 
+After installation, run `ruby -v` to make sure Ruby installed correctly. Example
 ```
-Give examples
+$ ruby -v
+ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-linux]
+```
+
+Also make sure that Rails is installed, but running `rails -v`. 
+Example
+```
+$ rails -v
+Rails 6.0.2.1
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+<p>Install the following to get this project running in your machine:</p>
 
-Say what the step will be
+### Instructions
 
-```
-Give the example
-```
+<p>Follow these steps:</p>
 
-And repeat
+Clone the Repository
 
-```
-until finished
+```Shell
+user@pc:~$ git clone https://github.com/Jaakal/building-with-active-record
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Click on the console and to go to the folder that was created
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```Shell
+user@pc:~$ cd building-with-active-record
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+$ bundle install --without production
 ```
 
-## Deployment
+Next, migrate the database:
 
-Add additional notes about how to deploy this on a live system
+```
+$ rails db:migrate
+```
 
-## Built With
+Run this command if you encountered a problem runing rails db:migrate
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+```
+$ bundle exec rails db:migrate
+```
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Finally you can test the associations through the rails console:
 
-## Versioning
+```
+$ rails console
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Code Example
 
-## Authors
+```
+$ user = User.create(name: "Joe", username: "Joe12")
+$ post = Post.create(content: "This is my first content", user_id: user.id)
+$ comment = Comment.create(content: "Great post!!", post_id: post.id, user_id: user.id)
+```
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+Testing the associations
+```
+$ User.first.posts
+$ User.first.comments
+$ Comment.first.user
+$ Post.first.user
+```
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Contact
 
-## License
+👤 **Yair Fernando Facio**
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+<a href="https://yairfernando67.github.io/Portfolio/" target="_blank">
+    
+  ![Screenshot Image](app/assets/images/logo.jpg) 
 
-## Acknowledgments
+</a>
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+- Github: [@YairFernando67](https://github.com/YairFernando67)
+- Twitter: [@YairFernando18](https://twitter.com/YairFernando18)
+- Linkedin: [softwaredeveloperyairfacio](https://www.linkedin.com/in/softwaredeveloperyairfacio/)
+- Email: [yair.facio11@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=yair.facio11@gmail.com)
+- Portfolio: [softwaredeveloper](https://yairfernando67.github.io/Portfolio/)
+
+<p align="center">
+
+  Project Link: [https://github.com/YairFernando67/sample_app](https://github.com/YairFernando67/sample_app)
+
+</p>
+
+
+👤 **Jaak Kivinukk**
+
+<a href="https://github.com/Jaakal" target="_blank">
+    
+  ![Screenshot Image](app/assets/images/profilePicture.png) 
+
+</a>
+
+- Github: [@Jaakal](https://github.com/Jaakal)
+- Twitter: [@JKivinukk](https://twitter.com/JKivinukk)
+- Linkedin: [full-stack-developer](https://www.linkedin.com/in/jaak-kivinukk-7098b1153/)
+- Email: [jaak.kivinukk@gmail.com](jaak.kivinukk@gmail.com)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Jaakal/building-with-active-record/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/https://github.com/Jaakal/building-with-active-record.svg?style=flat-square
+[contributors-url]: https://github.com/Jaakal/building-with-active-record/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Jaakal/building-with-active-record.svg?style=flat-square
+[forks-url]: https://github.com/Jaakal/building-with-active-record/network/members
+[stars-shield]: https://img.shields.io/github/stars/Jaakal/building-with-active-record.svg?style=flat-square
+[stars-url]: https://github.com/Jaakal/building-with-active-record/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Jaakal/building-with-active-record.svg?style=flat-square
+[issues-url]: https://github.com/Jaakal/building-with-active-record/issues
+[license-shield]: https://img.shields.io/github/license/Jaakal/building-with-active-record.svg?style=flat-square
+[license-url]: https://github.com/Jaakal/building-with-active-record/blob/master/LICENSE.txt
+[linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url2]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/jaak-kivinukk-7098b1153/
+[hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
+[hireable-url]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
