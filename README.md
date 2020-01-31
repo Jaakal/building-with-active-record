@@ -112,9 +112,9 @@ $ rails console
 Code snippet
 
 ```
-$ user = User.create(name: "Joe", username: "Joe12")
-$ post = Post.create(content: "This is my first content", user_id: user.id)
-$ comment = Comment.create(content: "Great post!!", post_id: post.id, user_id: user.id)
+$ user = User.create(name: "Joe", email: "joe.ruby@gmail.com")
+$ post = Post.create(title: "Title for the first post", body: "This is my first content", user_id: user.id)
+$ comment = Comment.create(body: "Great post!!", post_id: post.id, user_id: user.id)
 ```
 
 Testing the associations
