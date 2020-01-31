@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user = User.create(name: "Janne Doe", username: "Janne123")
+user = User.create(name: "Janne Doe", email: "Janne123@gmail.com")
 
-comment = Comment.create(content: "Jannes comment", user_id: user.id, post_id: 1)
+comment = Comment.create(body: "Jannes comment", user_id: user.id, post_id: 1)
